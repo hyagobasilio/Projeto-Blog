@@ -8,11 +8,25 @@
 		.container {
 			width: 960px;
 			margin: 0 auto;
+
+
+
 		}
 		body {
 			background: #FFF1D6;
 			font-family: "Lucila Grande", "Lucila Sans Unicode", Verdana, sans-serif;
 			line-height: 1.6;
+
+			background: #f85032; /* Old browsers */
+			background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f85032), color-stop(50%,#f16f5c), color-stop(51%,#f6290c), color-stop(71%,#f02f17), color-stop(100%,#e73827)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+
+
 		}
 
 		.place {
@@ -49,6 +63,33 @@
 		.clear {
 			clear: both;
 		}
+		.footer {
+			font-size: 12px;
+			text-align: center;
+		}
+		.sidenote {
+			background-color: #FFFBE4;
+			border: 1px solid #C9BC8F;
+			padding: 10px;
+			float: right;
+			padding: 10px;
+			width: 260px;
+		}
+		
+		.sidenote h3 {
+			font-size: 14px;
+			margin-top: 0;
+		}
+
+		.sidenote ol  {
+			font-size: 12px;
+		}
+		.places {
+			float: left;
+			width: 660px;
+		}
+
+
 	</style>
 </head>
 <body>
@@ -58,6 +99,10 @@
 <!-- Todo o corpo da página vem aqui.. -->
 
 <h1><a href="">Cleiton Rasta e Edvaldo Pedra!</a></h1>
+
+<div class="places">
+	
+
 
 <div class="place">
 	<h2>Passear no suvaco da uvêia!</h2>
@@ -69,7 +114,7 @@
 	<p>O Cleiton Rasta é o Dj mais comentado dos ultimos anos. Veja o que estão falando sobre ele no <a href="https://twitter.com/search?q=cleiton+rasta" target="_blank">Twitter</a>!</p>
 
 	<div class="clear"></div>
-</div>
+</div> <!-- ./place -->
 
 <div class="place">
 	<h2>Passear no suvaco da uvêia!</h2>
@@ -80,7 +125,7 @@
 
 	<p>O Cleiton Rasta é o Dj mais comentado dos ultimos anos. Veja o que estão falando sobre ele no <a href="https://twitter.com/search?q=cleiton+rasta" target="_blank">Twitter</a>!</p>
 	<div class="clear"></div>
-</div>
+</div><!-- ./place -->
 
 <div class="place">
 	<h2>Passear no suvaco da uvêia!</h2>
@@ -89,9 +134,26 @@
 	</p>
 
 	<p>O Cleiton Rasta é o Dj mais comentado dos ultimos anos. Veja o que estão falando sobre ele no <a href="https://twitter.com/search?q=cleiton+rasta" target="_blank">Twitter</a>!</p>
-</div>
+</div><!-- ./place -->
 
-</div>	
+</div> <!-- ./places -->
+
+<div class="sidenote">
+	<h3>Discografia Cleiton Rasta</h3>
+	<ol>
+		<li>Discografia CD 1</li>
+		<li>Discografia CD 2</li>
+		<li>Discografia CD 3</li>
+		<li>Discografia CD 4</li>
+		<li>Discografia CD 5</li>
+	</ol>
+</div> <!-- ./sidenote -->
+
+<div class="footer clear">
+	<p>Cleiton Rasta Corporation &copy;</p>
+</div><!-- /.footer -->
+
+</div> <!-- /.container -->	
 
 </body>
 </html>
