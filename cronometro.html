@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cronometro</title>
+	<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+	}
+body{
+	background:#CCC;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	}
+#topo{
+	background:#069;
+	height:100px;
+	line-height:100px;
+	border-bottom:2px solid #006;
+	}
+h2 a{
+	color:#069;
+	text-decoration:none;
+	}
+h2 a:hover{
+	color:#006;
+	}
+input{
+	background:#ccc;
+	width:600px;
+	height:200px;
+	line-height:200px;
+	font-size:150px;
+	border:none;
+	}
+</style>
+</head>
+<body>
+   <form name="form">
+      <input type="text" name="cronometro" value="00:00:00" />
+      <br />
+      <button type="button" onclick="setInterval('tempo()',983);return false;">Iniciar Cronômetro</button>
+   </form>
+   <script type="text/javascript" language="JavaScript">
+var segundo = 0+"0";
+var minuto = 0+"0";
+var hora = 0+"0";
+ 
+function tempo(){	
+   if (segundo < 59){
+      segundo++
+      if(segundo < 10){segundo = "0"+segundo}
+   }else 
+      if(segundo == 59 && minuto < 59){
+         segundo = 0+"0";
+	minuto++;
+	if(minuto < 10){minuto = "0"+minuto}
+      }
+   if(minuto == 59 && segundo == 59 && hora < 23){
+      segundo = 0+"0";
+      minuto = 0+"0";
+      hora++;
+      if(hora < 10){hora = "0"+hora}
+   }else 
+      if(minuto == 59 && segundo == 59 && hora == 23){
+         segundo = 0+"0";
+	minuto = 0+"0";
+	hora = 0+"0";
+      }
+   form.cronometro.value = hora +":"+ minuto +":"+ segundo
+}
+</script>
+</body>
+</html>
